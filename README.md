@@ -1,3 +1,6 @@
+### Status
+[![Build Status](https://travis-ci.com/jeanbaptistevilain/tdd-jest.svg?branch=master)](https://travis-ci.com/jeanbaptistevilain/tdd-jest)
+
 ## Setup
 Using npm :
 
