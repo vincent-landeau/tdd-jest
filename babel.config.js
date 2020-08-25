@@ -10,6 +10,3 @@ module.exports = {
     ],
   ],
 };
-
-// Todo : add katas (fizzbuzz etc...)
-// push project on Github
