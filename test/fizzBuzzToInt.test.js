@@ -6,6 +6,9 @@ test('convert 3 return "Fizz"', () => {
 test('convert 5 return "Buzz"', () => {
     expect(fizzBuzzToInt(5)).toBe('Buzz');
 });
+test('convert 7 return 7', () => {
+    expect(fizzBuzzToInt(7)).toBe(7);
+});
 test('convert 15 return "Buzz"', () => {
     expect(fizzBuzzToInt(15)).toBe('FizzBuzz');
 });
