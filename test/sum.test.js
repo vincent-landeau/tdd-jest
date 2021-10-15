@@ -9,3 +9,6 @@ test('adds 1 + "2" return null', () => {
 test('adds 1 + "IX" return 10', () => {
     expect(sum(1, "IX")).toBe(10);
 });
+test('adds 1 + "MCMXCIX" return 10', () => {
+    expect(sum(1, "MCMXCIX")).toBe(2000);
+});

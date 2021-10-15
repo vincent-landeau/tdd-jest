@@ -19,7 +19,7 @@ function romanToInt (integer) {
                 integer -= key;
                 break;
             }
-            let subSymbol = Math.ceil(key/(key.toString()[0] == '1' ? 10 : 5));
+            let subSymbol = Math.ceil(key/(key.toString()[0] === '1' ? 10 : 5));
             if(integer >= key-subSymbol) {
                 result += symbols.get(subSymbol)+value;
                 integer -= key-subSymbol;
