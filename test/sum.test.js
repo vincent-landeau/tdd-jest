@@ -6,3 +6,6 @@ test('adds 1 + 2 to equal 3', () => {
 test('adds 1 + "2" return null', () => {
     expect(sum(1, "2")).toBe(null);
 });
+test('adds 1 + "IX" return 10', () => {
+    expect(sum(1, "IX")).toBe(10);
+});
