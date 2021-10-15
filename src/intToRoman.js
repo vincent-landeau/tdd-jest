@@ -1,7 +1,6 @@
 function romanToInt (integer) {
-    let result = "";
     if (integer == null || !Number.isInteger(integer) || integer === 0) {
-        return integer;
+        return null;
     }
     let symbols = new Map();
     symbols.set(1000, 'M');
@@ -12,6 +11,7 @@ function romanToInt (integer) {
     symbols.set(5, 'V');
     symbols.set(1, 'I');
 
+    let result = "";
     do {
         for (let [key, value] of symbols) {
             if(integer >= key)  {
@@ -19,7 +19,7 @@ function romanToInt (integer) {
                 integer -= key;
                 break;
             }
-            let subSymbol = Math.ceil(key/10);
+            let subSymbol = Math.ceil(key/(key.toString()[0] == '1' ? 10 : 5));
             if(integer >= key-subSymbol) {
                 result += symbols.get(subSymbol)+value;
                 integer -= key-subSymbol;

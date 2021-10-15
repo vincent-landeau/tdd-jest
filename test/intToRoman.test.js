@@ -6,9 +6,15 @@ test('convert 9 return "IX"', () => {
 test('convert 502 return "DII"', () => {
     expect(intToRoman(502)).toBe('DII');
 });
+test('convert 402 return "DII"', () => {
+    expect(intToRoman(402)).toBe('CDII');
+});
 test('convert 2021 return "MMXXI"', () => {
     expect(intToRoman(2021)).toBe('MMXXI');
 });
 test('convert 1999 return "MCMXCIX"', () => {
     expect(intToRoman(1999)).toBe('MCMXCIX');
+});
+test('convert "oui" return null', () => {
+    expect(intToRoman("oui")).toBeNull();
 });
